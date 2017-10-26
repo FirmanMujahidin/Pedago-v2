@@ -22,6 +22,10 @@ android {
         multiDexEnabled true
 //        signingConfig signingConfigs.config
         signingConfig signingConfigs.pedago_config
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "BASEURL", "\"https://pedago.id/\"")
+        buildConfigField("boolean", "DEVELOPMENT", "true")
+        vectorDrawables.useSupportLibrary = true
     }
 //    repositories {
 //        mavenCentral()
@@ -80,6 +84,12 @@ dependencies {
     compile 'com.github.GrenderG:Toasty:1.2.5'
     compile 'com.jakewharton:butterknife:8.8.1'
     compile 'me.biubiubiu.justifytext:library:1.1'
+    compile 'com.jaredrummler:material-spinner:1.1.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

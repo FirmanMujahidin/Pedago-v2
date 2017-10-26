@@ -8,93 +8,107 @@
     tools:context="com.pedago2.ChatTutor.ChatTutorActivity">
 
   <include layout="@layout/toolbar"/>
-<!--
-app:theme="@style/Base.Theme.DesignDemo"
-        app:popupTheme="@style/MainActionBar.Popup"
--->
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/text"
-            android:text="step 1"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:id="@+id/text1"
-            android:text="Ambil Gambar Soal Yang Ingin \n Kamu Tanyakan"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <Button
-                android:background="@drawable/ic_camera"
-                android:id="@+id/button6"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:gravity="center" />
-        </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text"
+                    android:text="step 1"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-           <Spinner
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"/>
-        </LinearLayout>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/text1"
+                    android:text="Ambil Gambar Soal Yang Ingin \n Kamu Tanyakan"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@drawable/ic_camera"
+                        android:id="@+id/iv_view_file"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:gravity="center" />
+                </LinearLayout>
 
-            <Button
-                android:id="@+id/btn_gallery"
-                android:layout_width="100dp"
-                android:layout_height="90dp"
-                android:background="@drawable/ic_galery"
-                android:gravity="center" />
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_mapel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
 
-            <Button
-                android:background="@drawable/ic_camera_button"
-                android:layout_width="100dp"
-                android:layout_height="90dp"
-                android:gravity="center" />
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Button
-                android:background="@drawable/round_rec_background_putih"
-                android:text="Lanjut"
-                android:textColor="@color/white"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:gravity="center" />
-        </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_gallery"
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="@dimen/medium"
+                        android:background="@drawable/ic_galery"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_marginLeft="@dimen/medium"
+                        android:id="@+id/btn_camera"
+                        android:background="@drawable/ic_camera_button"
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_next"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/round_rec_background_putih"
+                        android:text="Lanjut"
+                        android:textColor="@color/white"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
 
 
+            </LinearLayout>
+
+
+        </ScrollView>
     </LinearLayout>
+
 
 
 
