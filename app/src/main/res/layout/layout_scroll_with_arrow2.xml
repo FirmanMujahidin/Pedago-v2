@@ -1,0 +1,1420 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none">
+        <!--satu-->
+        <LinearLayout
+            android:id="@+id/innerLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efefef"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imageViewA"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:src="@drawable/ic_caryta" />-->
+                    <!-- center fitStart fitEnd -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_rectangle_background"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewA"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_pedago2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress_carytaA"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.64"
+                                android:max="200"
+                                android:progress="130"
+                                android:progressDrawable="@drawable/progress_style" />
+
+                            <TextView
+                                android:id="@+id/list_item_persenA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:background="#00000000"
+                                android:gravity="right|center_vertical"
+                                android:text="00%"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/list_item_namaA"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.13"
+                            android:paddingLeft="2dp"
+                            android:text="Tas Rovellers"
+                            android:textAppearance="?textAppearanceListItem"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rp "
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/list_item_hargaA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/horizontal_line"
+                                android:text="00"
+                                android:textAppearance="?attr/textAppearanceListItem"
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_weight="1"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/list_item_jml_carytaA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical|left"
+                                android:text="00"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/ic_pedago2"
+                                android:text=" " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:text="GRATIS"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_rectangle_background"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewB"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_pedago2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress_carytaB"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.64"
+                                android:max="200"
+                                android:progress="130"
+                                android:progressDrawable="@drawable/progress_style" />
+
+                            <TextView
+                                android:id="@+id/list_item_persenB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:background="#00000000"
+                                android:gravity="right|center_vertical"
+                                android:text="00%"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/list_item_namaB"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.13"
+                            android:paddingLeft="2dp"
+                            android:text="Tas Rovellers"
+                            android:textAppearance="?textAppearanceListItem"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rp "
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/list_item_hargaB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/horizontal_line"
+                                android:text="00"
+                                android:textAppearance="?attr/textAppearanceListItem"
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_weight="1"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/list_item_jml_carytaB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical|left"
+                                android:text="00"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/ic_pedago2"
+                                android:text=" " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:text="GRATIS"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_rectangle_background"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewC"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_pedago2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress_carytaC"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.64"
+                                android:max="200"
+                                android:progress="130"
+                                android:progressDrawable="@drawable/progress_style" />
+
+                            <TextView
+                                android:id="@+id/list_item_persenC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:background="#00000000"
+                                android:gravity="right|center_vertical"
+                                android:text="00%"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/list_item_namaC"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.13"
+                            android:paddingLeft="2dp"
+                            android:text="Tas Rovellers"
+                            android:textAppearance="?textAppearanceListItem"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rp "
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/list_item_hargaC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/horizontal_line"
+                                android:text="00"
+                                android:textAppearance="?attr/textAppearanceListItem"
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_weight="1"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/list_item_jml_carytaC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical|left"
+                                android:text="00"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/ic_pedago2"
+                                android:text=" " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:text="GRATIS"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_rectangle_background"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewD"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_pedago2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress_carytaD"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.64"
+                                android:max="200"
+                                android:progress="130"
+                                android:progressDrawable="@drawable/progress_style" />
+
+                            <TextView
+                                android:id="@+id/list_item_persenD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:background="#00000000"
+                                android:gravity="right|center_vertical"
+                                android:text="00%"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/list_item_namaD"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.13"
+                            android:paddingLeft="2dp"
+                            android:text="Tas Rovellers"
+                            android:textAppearance="?textAppearanceListItem"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rp "
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/list_item_hargaD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/horizontal_line"
+                                android:text="00"
+                                android:textAppearance="?attr/textAppearanceListItem"
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_weight="1"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/list_item_jml_carytaD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical|left"
+                                android:text="00"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/ic_pedago2"
+                                android:text=" " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:text="GRATIS"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_rectangle_background"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewE"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_pedago2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress_carytaE"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.64"
+                                android:max="200"
+                                android:progress="130"
+                                android:progressDrawable="@drawable/progress_style" />
+
+                            <TextView
+                                android:id="@+id/list_item_persenE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:background="#00000000"
+                                android:gravity="right|center_vertical"
+                                android:text="00%"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/list_item_namaE"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.13"
+                            android:paddingLeft="2dp"
+                            android:text="Tas Rovellers"
+                            android:textAppearance="?textAppearanceListItem"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rp "
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/list_item_hargaE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/horizontal_line"
+                                android:text="00"
+                                android:textAppearance="?attr/textAppearanceListItem"
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_weight="1"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/list_item_jml_carytaE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical|left"
+                                android:text="00"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/ic_pedago2"
+                                android:text=" " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:text="GRATIS"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_rectangle_background"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewF"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_pedago2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress_carytaF"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.64"
+                                android:max="200"
+                                android:progress="130"
+                                android:progressDrawable="@drawable/progress_style" />
+
+                            <TextView
+                                android:id="@+id/list_item_persenF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:background="#00000000"
+                                android:gravity="right|center_vertical"
+                                android:text="00%"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/list_item_namaF"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.13"
+                            android:paddingLeft="2dp"
+                            android:text="Tas Rovellers"
+                            android:textAppearance="?textAppearanceListItem"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rp "
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/list_item_hargaF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/horizontal_line"
+                                android:text="00"
+                                android:textAppearance="?attr/textAppearanceListItem"
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_weight="1"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/list_item_jml_carytaF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical|left"
+                                android:text="00"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/ic_pedago2"
+                                android:text=" " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:text="GRATIS"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutG"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_rectangle_background"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewG"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_pedago2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress_carytaG"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.64"
+                                android:max="200"
+                                android:progress="130"
+                                android:progressDrawable="@drawable/progress_style" />
+
+                            <TextView
+                                android:id="@+id/list_item_persenG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:background="#00000000"
+                                android:gravity="right|center_vertical"
+                                android:text="00%"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/list_item_namaG"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.13"
+                            android:paddingLeft="2dp"
+                            android:text="Tas Rovellers"
+                            android:textAppearance="?textAppearanceListItem"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rp "
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/list_item_hargaG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/horizontal_line"
+                                android:text="00"
+                                android:textAppearance="?attr/textAppearanceListItem"
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_weight="1"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/list_item_jml_carytaG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical|left"
+                                android:text="00"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/ic_pedago2"
+                                android:text=" " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:text="GRATIS"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutH"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_rectangle_background"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewH"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_pedago2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress_carytaH"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.64"
+                                android:max="200"
+                                android:progress="130"
+                                android:progressDrawable="@drawable/progress_style" />
+
+                            <TextView
+                                android:id="@+id/list_item_persenH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:background="#00000000"
+                                android:gravity="right|center_vertical"
+                                android:text="00%"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/list_item_namaH"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.13"
+                            android:paddingLeft="2dp"
+                            android:text="Tas Rovellers"
+                            android:textAppearance="?textAppearanceListItem"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rp "
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/list_item_hargaH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/horizontal_line"
+                                android:text="00"
+                                android:textAppearance="?attr/textAppearanceListItem"
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_weight="1"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/list_item_jml_carytaH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical|left"
+                                android:text="00"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/ic_pedago2"
+                                android:text=" " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:text="GRATIS"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutI"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_rectangle_background"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewI"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_pedago2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress_carytaI"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.64"
+                                android:max="200"
+                                android:progress="130"
+                                android:progressDrawable="@drawable/progress_style" />
+
+                            <TextView
+                                android:id="@+id/list_item_persenI"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:background="#00000000"
+                                android:gravity="right|center_vertical"
+                                android:text="00%"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/list_item_namaI"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.13"
+                            android:paddingLeft="2dp"
+                            android:text="Tas Rovellers"
+                            android:textAppearance="?textAppearanceListItem"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rp "
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/list_item_hargaI"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/horizontal_line"
+                                android:text="00"
+                                android:textAppearance="?attr/textAppearanceListItem"
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_weight="1"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/list_item_jml_carytaI"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical|left"
+                                android:text="00"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/ic_pedago2"
+                                android:text=" " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:text="GRATIS"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutJ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_rectangle_background"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewJ"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_pedago2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress_carytaJ"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.64"
+                                android:max="200"
+                                android:progress="130"
+                                android:progressDrawable="@drawable/progress_style" />
+
+                            <TextView
+                                android:id="@+id/list_item_persenJ"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:background="#00000000"
+                                android:gravity="right|center_vertical"
+                                android:text="00%"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/list_item_namaJ"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.13"
+                            android:paddingLeft="2dp"
+                            android:text="Tas Rovellers"
+                            android:textAppearance="?textAppearanceListItem"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rp "
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/list_item_hargaJ"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/horizontal_line"
+                                android:text="00"
+                                android:textAppearance="?attr/textAppearanceListItem"
+                                android:textColor="@android:color/secondary_text_dark"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_weight="1"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/list_item_jml_carytaJ"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical|left"
+                                android:text="00"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/ic_pedago2"
+                                android:text=" " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:text="GRATIS"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--satu-->
+    </HorizontalScrollView>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/prev"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:descendantFocusability="blocksDescendants"-->
+    <!--android:paddingLeft="5dip"-->
+    <!--android:paddingRight="5dip">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:src="@drawable/left_arrow" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/next"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:descendantFocusability="blocksDescendants"-->
+    <!--android:paddingLeft="5dip"-->
+    <!--android:paddingRight="5dip">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:src="@drawable/right_arrow2" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

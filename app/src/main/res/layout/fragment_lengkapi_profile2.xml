@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_tengah_lengkapi_profil1"
+    android:orientation="vertical"
+    tools:context="com.pedago2.Profil.LengkapiProfil2Fragment">
+
+    <LinearLayout
+        android:id="@+id/body_lengkapi_profil1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Nama Sekolah"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round_rectangle_background_white"
+                android:text="Negeri"
+                android:textColor="@color/hijau1"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round_rectangle_frame_white"
+                android:text="Swasta"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pilih_nama_sekolah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:background="@drawable/background_lengkapi_profil_text"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="SMAN" />
+    </LinearLayout>
+
+</LinearLayout>

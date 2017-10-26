@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pedago2.SettingItems.ContactUs.ContactUsActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_facebook"
+                            android:src="@drawable/ic_facebook_icon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <Button
+                            android:id="@+id/bt_facebook"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Facebook.com/pedago.id"
+                            android:background="@drawable/round_rectangle_background"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_whatsapp"
+                            android:src="@drawable/ic_whatsapp_icon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <Button
+                            android:id="@+id/bt_whatsapp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="+62 - 8542 - 6151 - 364"
+                            android:background="@drawable/round_rectangle_background"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_line"
+                            android:src="@drawable/ic_line_icon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <Button
+                            android:id="@+id/bt_line"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="@string/pedago_id"
+                            android:background="@drawable/round_rectangle_background"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_instagram"
+                            android:src="@drawable/ic_instagram_icon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <Button
+                            android:id="@+id/bt_instagram"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="@string/pedago_id"
+                            android:background="@drawable/round_rectangle_background"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_mail"
+                            android:src="@drawable/ic_webmail_icon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <Button
+                            android:id="@+id/bt_mail"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="hotmail@pedago.id"
+                            android:background="@drawable/round_rectangle_background"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_status"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_rectangle_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_kata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Sudahkah kamu ikut Youthmanual? Klik pilihan dibawah ini dan ikuti alur kami"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_sudah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_rectangle_background_button"
+            android:text="Sudah ikut"
+            android:textColor="@color/hijau1"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_belum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_rectangle_background_button"
+            android:text="Belum ikut"
+            android:textColor="@color/hijau1"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

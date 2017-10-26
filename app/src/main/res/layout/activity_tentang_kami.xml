@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingItems.Privasi.tentangkami.TentangKamiActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_logo_pedago"
+                        android:background="@drawable/ic_pedago_logo"
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <me.biubiubiu.justifytext.library.JustifyTextView
+                            android:text="@string/lbl_lorem_ibsum"
+                            android:id="@+id/jf_text1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <me.biubiubiu.justifytext.library.JustifyTextView
+                            android:text="@string/lbl_lorem_ibsum"
+                            android:id="@+id/jf_text2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

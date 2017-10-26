@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "182556358509",
+    "project_id": "firebase-pedago2"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182556358509:android:91179a2032e3716a",
+        "android_client_info": {
+          "package_name": "com.pedago2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182556358509-0clljr5s8p82j1fl0b2o1f696tnnt4rg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "182556358509-kmgqdjcrv7ihq91ghlal5je1o85v617a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pedago2",
+            "certificate_hash": "167faaedad546161b04420f0a433b8a56739bba1"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb3KfLCpk_JeylbmXrtIb-5v3oCcabrCc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

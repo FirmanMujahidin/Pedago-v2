@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pedago2.Profil.LengkapiProfil3Fragment">
+    <!--android:id="@+id/footer_lengkapi_profil"-->
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_bawah_lengkapi_profil"
+        android:fitsSystemWindows="true"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="100%">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo_pedago_id"
+            android:paddingBottom="10dp"
+            app:layout_heightPercent="5%"
+            app:layout_widthPercent="10%" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_rectangle_background"
+            android:gravity="center"
+            android:text="Mulai Realisasikan Mimpi Mu"
+            android:textColor="#ffffff"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="60%" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_below="@+id/button4"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            app:layout_heightPercent="7%"
+            app:layout_widthPercent="1%" />
+
+        <TextView
+            android:id="@+id/tv_pilih_karir"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_below="@+id/view1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_rectangle_frame_white"
+            android:gravity="center"
+            android:text="Pilih bidang karir yang kamu inginkan"
+            android:textColor="#ffffff"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="70%" />
+
+        <TextView
+            android:id="@+id/tv_pilih_univ"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_below="@+id/view4"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_rectangle_frame_white"
+            android:gravity="center"
+            android:text="Pilih Universitas tujuan mu"
+            android:textColor="#ffffff"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="70%" />
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_below="@+id/tv_pilih_univ"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            app:layout_heightPercent="5%"
+            app:layout_widthPercent="1%" />
+
+        <TextView
+            android:id="@+id/tv_pilih_jurusan"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_below="@+id/view5"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_rec_background_hitam"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="Pilih Jurusan kuliah mu"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="80%" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_below="@+id/tv_pilih_karir"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            app:layout_heightPercent="5%"
+            app:layout_widthPercent="1%" />
+
+        <EditText
+            android:id="@+id/et_spesifikasi_karir"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_below="@+id/view2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_rec_background_putih"
+            android:gravity="center"
+            android:inputType="textCapWords"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:hint="Tuliskan spesifikasi karir yang kamu inginkan"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="80%" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_below="@+id/et_spesifikasi_karir"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            app:layout_heightPercent="5%"
+            app:layout_widthPercent="1%" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_below="@+id/view3"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo_pedago_id"
+            android:paddingBottom="10dp"
+            app:layout_heightPercent="5%"
+            app:layout_widthPercent="10%" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_below="@+id/button5"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            app:layout_heightPercent="7%"
+            app:layout_widthPercent="1%" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_pilih_karir"
+            android:layout_alignLeft="@+id/et_spesifikasi_karir"
+            android:layout_alignStart="@+id/et_spesifikasi_karir"
+            android:layout_below="@+id/button4"
+            android:layout_toLeftOf="@+id/button4"
+            android:layout_toStartOf="@+id/button4"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tentukan cita - cita" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Karir mu" />
+        </LinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

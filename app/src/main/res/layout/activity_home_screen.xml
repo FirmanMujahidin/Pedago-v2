@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_heightPercent="100%"
+    app:layout_widthPercent="100%"
+    tools:context="com.pedago2.HomeScreen.HomeScreenActivity">
+    <!--  android:fitsSystemWindows="true"-->
+    <!-- android:background="#000000"-->
+    <!-- ini fungsi untuk memanggil layout include_list_viewpager --><!-- <include layout="@layout/include_list_viewpager" /> -->
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_viewpager_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="72%" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="100%">
+
+            <View
+                android:id="@+id/left"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/left_home_screen"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="1.5%" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/tabs_layout"
+                android:layout_width="109dp"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@+id/left"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:weightSum="1"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="30%">
+
+                <LinearLayout
+                    android:id="@+id/header"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/header_kiri"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    app:layout_heightPercent="30%"
+                    app:layout_widthPercent="100%">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/ic_pedago2"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/bingkai_hexagon" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:text="Ganti Foto" />
+                        <!--android:textAppearance="?attr/textAppearanceListItem"-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50" />
+
+                        <Button
+                            android:id="@+id/btn_token"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="0.50"
+                            android:background="@drawable/token" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Token"
+                            android:textColor="#ffffff"
+                            app:layout_heightPercent="17%"
+                            app:layout_widthPercent="30%" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_profil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:background="@drawable/btn_home_menu_selected"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="10dp"
+                    android:text="Profil"
+                    app:layout_heightPercent="10%"
+                    app:layout_widthPercent="100%" />
+
+                <Button
+                    android:id="@+id/btn_roadmap"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btn_profil"
+                    android:background="@drawable/btn_home_menu"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="10dp"
+                    android:text="Roadmap"
+                    app:layout_heightPercent="10%"
+                    app:layout_widthPercent="100%" />
+
+                <Button
+                    android:id="@+id/btn_raport"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btn_roadmap"
+                    android:background="@drawable/btn_home_menu"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="10dp"
+                    android:text="Overview Raport"
+                    app:layout_heightPercent="10%"
+                    app:layout_widthPercent="100%" />
+
+                <Button
+                    android:id="@+id/btn_suggest"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btn_raport"
+                    android:background="@drawable/btn_home_menu"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="10dp"
+                    android:text="Suggest Latihan"
+                    app:layout_heightPercent="10%"
+                    app:layout_widthPercent="100%" />
+
+                <Button
+                    android:id="@+id/btn_school"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btn_suggest"
+                    android:background="@drawable/btn_home_menu"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="10dp"
+                    android:text="School Activity"
+                    app:layout_heightPercent="10%"
+                    app:layout_widthPercent="100%" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btn_school"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bottom_home_screen"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="10%"
+                    app:layout_widthPercent="100%" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_toolbar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                app:layout_heightPercent="25%"
+                app:layout_widthPercent="71%">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/header_kanan"
+                    app:popupTheme="@style/Base.Theme.DesignDemo">
+                    <!-- android:background="@drawable/logo"-->
+
+                </android.support.v7.widget.Toolbar>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#00000000"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btn_materi_pelajaran"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/btn_materi_pelajaran" />
+
+                    <ImageView
+                        android:id="@+id/btn_latihan_soal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/btn_latihan_soal" />
+
+                    <ImageView
+                        android:id="@+id/btn_panggil_tutor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/btn_panggil_tutor" />
+
+                    <ImageView
+                        android:id="@+id/btn_chat_tutor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/btn_chat_tutor" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <!--<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--style="@style/Widget.AppCompat.Toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:minHeight="@dimen/abc_action_bar_default_height_material"/>-->
+
+        <!--app:tabSelectedTextColor="@color/colorPrimaryDark"-->
+        <!--android:background="@drawable/list_gray_border" app:tabTextColor="@color/colorGrey"-->
+
+        <!-- android:fillViewport="true"-->
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:src="@drawable/logo" />-->
+        <!-- app:layout_scrollFlags="scroll|enterAlways|snap" -->
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.percent.PercentRelativeLayout>
+
+    <!--<android.support.v7.widget.RecyclerView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:layout_behavior="@string/appbar_scrolling_view_behavior">--><!--</android.support.v7.widget.RecyclerView>-->

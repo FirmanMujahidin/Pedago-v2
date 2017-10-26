@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.pedago2.SettingItems.Setting.SettingActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_edit_profile"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Edit Profile"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded"/>
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_right_single_grey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_change_password"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_change_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Change Password"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_right_single_grey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_posts_like"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_posts_like"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Posts You've Like"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_right_single_grey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_private_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_private_account"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Private Account"
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/swt_private_account"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.3"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/default_line_indicator_unselected_color"
+                        android:text="@string/lbl_lorem_ibsum"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/default_line_indicator_unselected_color"
+                        android:text="SETTING"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_linked_account"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_linked_account"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Linked Accounts"
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_right_single_grey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_Push"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_push"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Push Notification Setting"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_right_single_grey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_save_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_save_photos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Save Original Photos"
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.2"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_preload_video"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_preload_videos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Preload Videos"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/tv_only_wifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only on WI-FI"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="18sp"
+                        tools:ignore="RtlHardcoded"
+                        android:layout_weight="0.10" />
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_right_single_grey"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/default_line_indicator_unselected_color"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SUPPORT"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_help_center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_help_center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Help Center"
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_right_single_grey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_report_problem"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_report_problem"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Report a Problem"
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_right_single_grey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/vpi__bright_foreground_disabled_holo_light"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

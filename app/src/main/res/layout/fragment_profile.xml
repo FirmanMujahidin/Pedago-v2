@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hijau4"
+    android:orientation="horizontal"
+    tools:context="com.pedago2.HomeScreen.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat Email"
+            android:textColor="#fafafa"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_email_profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:alpha="50"
+            android:textColor="@color/hijau1"
+            android:background="@drawable/background_profile_text"
+            android:ems="10"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="textEmailAddress"
+            android:labelFor="@+id/et_email_profile" />
+        <!--android:imeOptions="flagNoExtractUi"-->
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Hp"
+            android:textColor="#fafafa"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_no_hp_profile"
+            android:layout_width="match_parent"
+            android:textColor="@color/hijau1"
+            android:layout_height="50dp"
+            android:alpha="50"
+            android:background="@drawable/background_profile_text"
+            android:ems="10"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="phone"
+            android:labelFor="@+id/et_no_hp_profile" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat Rumah"
+            android:textColor="#fafafa"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_alamat_rumah_profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/hijau1"
+            android:alpha="50"
+            android:autoLink="all"
+            android:background="@drawable/background_profile_text"
+            android:ems="10"
+            android:gravity="top|left"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="textMultiLine|textCapSentences"
+            android:labelFor="@+id/et_alamat_rumah_profile"
+            android:lines="5"
+            android:maxLines="10"
+            android:minLines="1"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.40"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/banner1" />
+
+</LinearLayout>

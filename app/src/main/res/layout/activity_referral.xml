@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.pedago2.SettingItems.ReferralCode.ReferralActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hijau1"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/Theme.DesignDemo.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/hijau1"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/Theme.DesignDemo.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <RadioGroup
+            android:visibility="gone"
+            android:id="@+id/rdgroup_tabs_kode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdb_Parental"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tabs"
+                android:button="@null"
+                android:checked="true"
+                android:padding="@dimen/large"
+                android:gravity="center"
+                android:text="Kode Parental" />
+
+            <RadioButton
+                android:id="@+id/rdb_referal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/large"
+                android:background="@drawable/bg_tabs"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Kode Referal" />
+        </RadioGroup>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/hijau3" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

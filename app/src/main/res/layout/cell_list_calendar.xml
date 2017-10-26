@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:id="@+id/list_item_no"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="30"
+            android:textAppearance="?textAppearanceListItem"
+            android:textColor="@color/header_kiri"
+            android:textSize="50sp"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="30%" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_toEndOf="@+id/list_item_no"
+            android:layout_toRightOf="@+id/list_item_no"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="60%">
+
+            <TextView
+                android:id="@+id/list_item_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textAppearance="?textAppearanceListItem"
+                app:layout_heightPercent="10%"
+                app:layout_widthPercent="50%" />
+
+            <TextView
+                android:id="@+id/list_item_pelajaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pelajaran"
+                android:textAppearance="?textAppearanceListItem"
+                app:layout_heightPercent="10%"
+                app:layout_widthPercent="50%" />
+
+            <TextView
+                android:id="@+id/list_item_jam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jam"
+                android:textAppearance="?textAppearanceListItem"
+                app:layout_heightPercent="10%"
+                app:layout_widthPercent="50%" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/list_item_next"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/linearLayout3"
+            android:layout_toRightOf="@+id/linearLayout3"
+            android:background="@drawable/next_arrow"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="5%" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/main_layout"
+        android:background="@drawable/horizontal_line"
+        android:gravity="bottom" />
+
+</RelativeLayout>

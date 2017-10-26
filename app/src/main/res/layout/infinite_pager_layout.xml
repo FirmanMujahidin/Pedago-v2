@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_dark">
+
+    <com.pedago2.First.InfiniteViewPager
+        android:id="@+id/sample_infinite_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.pedago2.First.InfiniteCirclePageIndicator
+        android:id="@+id/sample_infinite_page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:fillColor="@color/blue50"
+        android:radius="4dp"
+        android:strokeColor="@color/blue10"
+        android:visibility="visible" />
+    <!--android:layout_above="@id/sample_infinite_page_indicator"-->
+    <!--app:strokeWidth="10dp"-->
+    <!--android:pageColor="@color/blue10"-->
+    <!--@color/default_circle_indicator_stroke_color-->
+    <!--@color/default_circle_indicator_fill_color-->
+
+</RelativeLayout>

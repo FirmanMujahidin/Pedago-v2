@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_camera"
+    tools:context="com.pedago2.ChatTutor.ChatTutorActivity">
+
+  <include layout="@layout/toolbar"/>
+<!--
+app:theme="@style/Base.Theme.DesignDemo"
+        app:popupTheme="@style/MainActionBar.Popup"
+-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text"
+            android:text="step 1"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/text1"
+            android:text="Ambil Gambar Soal Yang Ingin \n Kamu Tanyakan"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/ic_camera"
+                android:id="@+id/button6"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+           <Spinner
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_gallery"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:background="@drawable/ic_galery"
+                android:gravity="center" />
+
+            <Button
+                android:background="@drawable/ic_camera_button"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/round_rec_background_putih"
+                android:text="Lanjut"
+                android:textColor="@color/white"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

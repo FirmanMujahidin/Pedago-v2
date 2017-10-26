@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_rectangle_background"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_title"
+            android:layout_alignRight="@+id/tv_title"
+            android:layout_below="@+id/tv_title"
+            android:layout_gravity="end|bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text=""
+            android:textColor="@color/hijau1" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/hijau3"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/et_search"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:descendantFocusability="blocksDescendants"
+            android:fillViewport="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:ignore="UselessParent"/>
+
+        <!--<ScrollView-->
+            <!--android:id="@+id/scrollView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_below="@+id/et_search"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:descendantFocusability="blocksDescendants"-->
+            <!--android:fillViewport="true"-->
+            <!--android:focusable="true"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--tools:ignore="UselessParent">-->
+
+        <!--</ScrollView>-->
+
+    </RelativeLayout>
+
+</LinearLayout><!-- tools:listitem="@layout/main_feed_list1"-->
+
+    <!--
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical">
+</LinearLayout>-->

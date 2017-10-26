@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Pedago Student</string>
+    <string name="fb_key">1404404686340283</string>
+    <string name="huruf">RobotoCodensed/Roboto-Bold.ttf</string>
+    <!--RobotoCodensed/Roboto-Bold-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_detail_gratis">DetailGratisActivity</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="favoritkan">\u2764 Favoritkan</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_name">Nama</string>
+    <string name="prompt_no_hp">No Handphone</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_confirm_password">Konfirmasi Password (optional)</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+    <string name="alert_name1">Nama jangan kosong</string>
+    <string name="alert_name2">Format nama salah</string>
+
+    <string name="alert_email1">Email jangan kosong</string>
+    <string name="alert_email2">Format email salah</string>
+
+    <string name="alert_confirm_password_registrasi">confirm password kosong</string>
+    <string name="alert_confirm_password_registrasi2">password dan confirm password tidak sama</string>
+
+    <string name="alert_password">password jangan kosong</string>
+    <string name="connection_alert">No Internet Connection</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detail_kalender_belajar">DetailKalenderBelajarActivity</string>
+
+    <string name="lbl_lorem_ibsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="pedago_id">\@pedago.id</string>
+    <string name="title_activity_referral">ReferralActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="des_parental">Dengan kode ini orang tua kami bisa bangga akan   perkembangan belajarmu, bisa tahu seberapa dekat   lagi kamu mencapai cita-citamu dan dapat   mengisi saldo untukmu!</string>
+    <string name="des_title_parental">Masukan kode di bawah ini kedalam aplikasi   Pedago.id untuk orang tua</string>
+    <string name="des_referral">Masukan kode referal orang yang mengajak kamu untuk bergabung ke aplikasi ini. kode referal hanya bisa sekali dan tidak dapat di ubah.</string>
+    <string name="des2_parental">Ayo beritahu orang tuamu tentang aplikasi ini!</string>
+    <string name="des2_referral">Dapatkan bonus referral dari kami dengan mengajak   orang di sekitarmu untuk menjadi penguna aplikasi pedago.id. Masukan kode referral kamu ke akun orang yang kamu ajak untuk bergabung</string>
+    <string name="search">Search</string>
+
+</resources>

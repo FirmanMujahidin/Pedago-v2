@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_soal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="soal" />
+
+    <Button
+        android:id="@+id/btn_opsi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opsi1" />
+
+    <Button
+        android:id="@+id/btn_opsi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opsi2" />
+
+    <Button
+        android:id="@+id/btn_opsi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opsi3" />
+
+    <Button
+        android:id="@+id/btn_opsi4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opsi4" />
+
+    <Button
+        android:id="@+id/btn_opsi5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opsi5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next" />
+    </LinearLayout>
+
+</LinearLayout>

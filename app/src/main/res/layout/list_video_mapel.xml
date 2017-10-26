@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/relativeLayout2"
+        android:layout_toStartOf="@+id/relativeLayout2"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/medium"
+            android:layout_marginStart="@dimen/medium"
+            android:layout_marginTop="@dimen/medium"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/item_module_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_vidio" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_module_frame_disable"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_alignEnd="@+id/linearLayout2"
+            android:layout_alignRight="@+id/linearLayout2"
+            android:background="@color/blue35" />
+
+        <TextView
+            android:id="@+id/title_judul"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_alignEnd="@+id/linearLayout2"
+            android:layout_alignRight="@+id/linearLayout2"
+            android:gravity="center_horizontal"
+            android:text="pola gambar"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/item_module_icon_lock_"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_alignStart="@+id/linearLayout2"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="13dp"
+            app:srcCompat="@drawable/ic_play_video" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/medium"
+            android:layout_marginStart="@dimen/medium"
+            android:layout_marginTop="@dimen/medium"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/item_module_icon_"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_vidio" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_module_frame_disable_"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/linearLayout2_"
+            android:layout_alignEnd="@+id/linearLayout2_"
+            android:layout_alignRight="@+id/linearLayout2_"
+            android:background="@color/blue35" />
+
+        <View
+            android:id="@+id/item_module_frame_disable_dark_"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignBottom="@+id/linearLayout2_"
+            android:layout_alignEnd="@+id/linearLayout2_"
+            android:layout_alignRight="@+id/linearLayout2_"
+            android:background="@color/blue25" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/linearLayout2_"
+            android:layout_alignEnd="@+id/linearLayout2_"
+            android:layout_alignRight="@+id/linearLayout2_"
+            android:gravity="center_horizontal"
+            android:text="pola gambar"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/item_module_icon_lock"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/linearLayout2_"
+            android:layout_alignStart="@+id/linearLayout2_"
+            android:layout_alignTop="@+id/linearLayout2_"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="13dp"
+            app:srcCompat="@drawable/ic_lock_color" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

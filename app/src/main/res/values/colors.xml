@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--3F51B5-->
+    <color name="bolong">#00000000</color>
+    <color name="biru">#008fd7</color>
+    <color name="colorPrimaryDark">#0B9183</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="white">#ffff</color>
+    <color name="merah">#e0504a</color>
+
+    <color name="header_kiri">#0B9183</color>
+    <color name="header_kanan">#06776E</color>
+
+    <color name="hijau1">#06786e</color>
+    <color name="hijau2">#008580</color>
+    <color name="hijau3">#0e9183</color>
+    <color name="hijau4">#014441</color>
+
+
+    <!-- colors blue with transparent-->
+    <color name="blue0">#000000FF</color>
+    <color name="blue5">#0D0000FF</color>
+    <color name="blue10">#1A0000FF</color>
+    <color name="blue15">#260000FF</color>
+    <color name="blue20">#330000FF</color>
+    <color name="blue25">#400000FF</color>
+    <color name="blue30">#4D0000FF</color>
+    <color name="blue35">#590000FF</color>
+    <color name="blue40">#660000FF</color>
+    <color name="blue45">#730000FF</color>
+    <color name="blue50">#800000FF</color>
+    <color name="blue55">#8C0000FF</color>
+    <color name="blue60">#990000FF</color>
+    <color name="blue65">#A60000FF</color>
+    <color name="blue70">#B30000FF</color>
+    <color name="blue75">#BF0000FF</color>
+    <color name="blue80">#CC0000FF</color>
+    <color name="blue85">#D90000FF</color>
+    <color name="blue90">#E60000FF</color>
+    <color name="blue95">#F20000FF</color>
+    <color name="blue100">#FF0000FF</color>
+</resources>
+
+<!--
+100% — #FF
+95% — #F2
+90% — #E6
+85% — #D9
+80% — #CC
+75% — #BF
+70% — #B3
+65% — #A6
+60% — #99
+55% — #8C
+50% — #80
+45% — #73
+40% — #66
+35% — #59
+30% — #4D
+25% — #40
+20% — #33
+15% — #26
+10% — #1A
+5% — #0D
+0% — #00
+-->

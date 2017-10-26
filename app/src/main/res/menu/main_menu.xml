@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Search Widget -->
+    <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title=""
+        android:visible="true"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+<!--@string/app_name-->
+    <!-- Location Found -->
+    <!--<item-->
+        <!--android:id="@+id/action_help"-->
+        <!--android:icon="@drawable/ic_launcher"-->
+        <!--android:title="Help"-->
+        <!--app:showAsAction="ifRoom" />-->
+
+    <!-- -->
+    <!--&lt;!&ndash; Refresh &ndash;&gt;-->
+    <!--<item-->
+        <!--android:id="@+id/action_more"-->
+        <!--android:icon="@drawable/ic_launcher"-->
+        <!--android:title="more"-->
+        <!--app:showAsAction="ifRoom">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/action_create_club"-->
+                <!--android:title="Create Club"-->
+                <!--android:icon="@drawable/ic_launcher"-->
+                <!--/>-->
+            <!--<item-->
+                <!--android:id="@+id/action_find_bikers_nearby"-->
+                <!--android:title="Find Bikers Nearby"-->
+                <!--android:icon="@drawable/ic_launcher"-->
+                <!--/>-->
+            <!--<item-->
+                <!--android:id="@+id/action_find_clubs_nearby"-->
+                <!--android:title="Find Clubs Nearby"-->
+                <!--android:icon="@drawable/ic_launcher"-->
+                <!--/>-->
+        <!--</menu>-->
+    <!--</item>-->
+    <!-- -->
+    <!--&lt;!&ndash; Help &ndash;&gt;-->
+    <!--<item android:id="@+id/action_help"-->
+    <!--android:icon="@drawable/ic_action_help"-->
+    <!--android:title="@string/action_help" -->
+    <!--android:showAsAction="never"/>-->
+    <!-- -->
+    <!--&lt;!&ndash; Check updates &ndash;&gt;-->
+    <!--<item android:id="@+id/action_check_updates"-->
+    <!--android:icon="@drawable/ic_action_refresh"-->
+    <!--android:title="@string/action_check_updates"-->
+    <!--android:showAsAction="never" />-->
+</menu>
