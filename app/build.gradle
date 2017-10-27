@@ -22,9 +22,6 @@ android {
         multiDexEnabled true
 //        signingConfig signingConfigs.config
         signingConfig signingConfigs.pedago_config
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "BASEURL", "\"https://pedago.id/\"")
-        buildConfigField("boolean", "DEVELOPMENT", "true")
         vectorDrawables.useSupportLibrary = true
     }
 //    repositories {

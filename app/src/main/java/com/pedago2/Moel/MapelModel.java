@@ -14,6 +14,7 @@ public class MapelModel {
         this.title_play_video = title_play_video;
     }
 
+
     public MapelModel(){
 
     }

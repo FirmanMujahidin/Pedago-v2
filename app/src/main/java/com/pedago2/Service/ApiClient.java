@@ -1,12 +1,28 @@
 package com.pedago2.Service;
 
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.net.SocketTimeoutException;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+import static com.pedago2.Helper.ConstantApp.API_CODE;
+
 /**
  * Created by firma on 26-Oct-17.
  */
 
 public class ApiClient {
-	
-	 private static final String TAG = "ApiClient";
+
+    private static final String TAG = "ApiClient";
 
     public static Retrofit request(OnRequestTimeOut listener) {
 
@@ -67,5 +83,26 @@ public class ApiClient {
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
-            }
+
+
+//        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+//        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+//        builder.readTimeout(270, TimeUnit.SECONDS);
+//        builder.connectTimeout(270,TimeUnit.SECONDS);
+//
+//        HttpLoggingInterceptor interceptor1 = new HttpLoggingInterceptor();
+//        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+//
+////        OkHttpClient okHttpClient = builder.build();
+//
+//        Retrofit adapter_ =  new Retrofit.Builder()
+//                .baseUrl(BuildConfig)
+//                .client()
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
+//
+//        ApiInterface adapter = adapter_.create(ApiInterface.class);
+
+
+    }
 }
