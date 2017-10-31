@@ -28,24 +28,65 @@
         </android.support.v7.widget.Toolbar>
         <RelativeLayout
             android:layout_width="match_parent"
+            android:background="@drawable/bg_header"
             android:layout_height="100dp">
-            <ImageView
-                android:id="@+id/imageView"
-                android:background="@drawable/bg_header"
-                android:layout_width="match_parent"
-                android:layout_height="100dp" />
-            <android.support.v4.view.ViewPager
-                android:id="@+id/imageViewPagerHeader"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView"-->
+                <!---->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp" />-->
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/recyclerview_list"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
         </RelativeLayout>
 
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabs_layout_pgl_tutor"
+        <!--<android.support.design.widget.TabLayout-->
+            <!--android:id="@+id/tabs_layout_pgl_tutor"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/hijau3"/>-->
+
+        <RadioGroup
+            android:id="@+id/tabs_group"
+            android:layout_weight="1"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/hijau3"/>
+            android:layout_height="0dp">
+
+            <RadioButton
+                android:id="@+id/tabs_one"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tabs"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Kelas \n 1 SMA" />
+
+            <RadioButton
+                android:id="@+id/tabs_two"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_tabs"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="Kelas \n 2 SMA"/>
+            <RadioButton
+                android:id="@+id/tabs_tree"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="Kelas \n 3 SMA"/>
+        </RadioGroup>
 
     </android.support.design.widget.AppBarLayout>
 

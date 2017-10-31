@@ -75,6 +75,10 @@ public class ChatTutorActivity extends BasesActivity {
 //        spinnerMapel.setOnClickListener(View -> spinnerSelect());
 
         spinnerMapel.setItems(MATA_PELAJARAN);
+
+        btnNext.setOnClickListener(View -> {
+
+        });
     }
 
     private void spinnerSelect(){
@@ -90,16 +94,14 @@ public class ChatTutorActivity extends BasesActivity {
     }
 
 
-    private void galleryIntent()
-    {
+    private void galleryIntent(){
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);//
         startActivityForResult(Intent.createChooser(intent, "Select File"),SELECT_FILE);
     }
 
-    private void cameraIntent()
-    {
+    private void cameraIntent(){
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(intent, REQUEST_CAMERA);
     }
@@ -126,7 +128,6 @@ public class ChatTutorActivity extends BasesActivity {
     }
 
     private void onSelectFromGalleryResult(Intent data) {
-
         Bitmap bm=null;
         if (data != null) {
             try {
@@ -135,7 +136,6 @@ public class ChatTutorActivity extends BasesActivity {
                 e.printStackTrace();
             }
         }
-
         ivViewFile.setImageBitmap(bm);
     }
 
@@ -161,6 +161,5 @@ public class ChatTutorActivity extends BasesActivity {
 
         ivViewFile.setImageBitmap(thumbnail);
     }
-
 
 }

@@ -1,17 +1,22 @@
 package com.pedago2.Fragment;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.pedago2.Moel.MapelModel;
 import com.pedago2.R;
 import com.pedago2.adapter.MaPelAdapter;
+import com.pedago2.adapter.MyRecyclerViewAdapter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -19,7 +24,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 
-public class MaPelSatuFragment extends Fragment {
+public class MaPelSatuFragment extends Fragment{
 
 
     @BindView(R.id.recyclerView)
@@ -30,6 +35,8 @@ public class MaPelSatuFragment extends Fragment {
     public RecyclerView.LayoutManager layoutManager;
     public List<MapelModel> data_model;
     public Context mContext;
+
+
 
     public MaPelSatuFragment() {
         // Required empty public constructor
@@ -60,6 +67,9 @@ public class MaPelSatuFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_mapel_satu, container, false);
         unbinder = ButterKnife.bind(this, view);
+
+
+
         return view;
     }
 
